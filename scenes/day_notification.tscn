@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ctucik6degjts"]
+
+[ext_resource type="Script" uid="uid://w5gnv0srf3gq" path="res://scripts/day_notification.gd" id="1_3fs70"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="1_u2wl7"]
+[ext_resource type="PackedScene" uid="uid://b8hpfokeoh6bu" path="res://scenes/manager.tscn" id="2_5a0uf"]
+
+[node name="DayNotification" type="Node2D" unique_id=777144084]
+script = ExtResource("1_3fs70")
+
+[node name="Day" type="Label" parent="." unique_id=49763485]
+offset_left = 494.0
+offset_top = 296.0
+offset_right = 655.0
+offset_bottom = 379.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(18.892157, 18.892157, 18.892157, 1)
+theme_override_fonts/font = ExtResource("1_u2wl7")
+theme_override_font_sizes/font_size = 70
+text = "Day 1"
+
+[node name="Pause" type="Timer" parent="." unique_id=1131882847]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[node name="Panel" type="Panel" parent="." unique_id=1362379423]
+offset_right = 1500.0
+offset_bottom = 900.0
+
+[node name="Manager" parent="." unique_id=2131342433 instance=ExtResource("2_5a0uf")]
+
+[connection signal="timeout" from="Pause" to="." method="_on_pause_timeout"]

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bxpjak0qluwes"]
+
+[ext_resource type="Texture2D" uid="uid://b05j1mh5u4njd" path="res://art/full_artwork_pieces/corp_ending.png" id="1_kf425"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="2_140o5"]
+
+[node name="CorporationEnding" type="Node2D" unique_id=1764291393]
+
+[node name="Art" type="Sprite2D" parent="." unique_id=1156208703]
+position = Vector2(575, 322)
+texture = ExtResource("1_kf425")
+
+[node name="Text" type="Label" parent="." unique_id=1491487091]
+offset_left = 21.0
+offset_top = 22.0
+offset_right = 326.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("2_140o5")
+theme_override_font_sizes/font_size = 30
+text = "Ending 1: \"Total Control\"
+(Press escape to quit)"

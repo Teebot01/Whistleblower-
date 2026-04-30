@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://mqy4x085tdyn"]
+
+[ext_resource type="Texture2D" uid="uid://3xqqws3b4ju0" path="res://art/Console/border_background.png" id="1_2tkua"]
+[ext_resource type="Texture2D" uid="uid://dwue8gtwuebam" path="res://art/Console/screen_filter.png" id="2_d11wt"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="3_d11wt"]
+[ext_resource type="Texture2D" uid="uid://coeqar7xkcl8g" path="res://art/Console/white_bar.png" id="4_drvp6"]
+[ext_resource type="Texture2D" uid="uid://bg6ov0ccutx6i" path="res://art/posters/corporate/corporate_poster_4.png" id="5_sjvpl"]
+[ext_resource type="Texture2D" uid="uid://d2ld753ndy1es" path="res://art/posters/corporate/corporate_poster_1.png" id="6_eqikd"]
+[ext_resource type="Texture2D" uid="uid://bs6ek178oqyol" path="res://art/posters/corporate/corporate_poster_2.png" id="7_3sxtg"]
+[ext_resource type="Texture2D" uid="uid://d2lwiyktmfpqp" path="res://art/posters/corporate/corporate_poster_3.png" id="8_jex6q"]
+[ext_resource type="Texture2D" uid="uid://cogu43b84rs16" path="res://art/posters/corporate/corporate_poster_5.png" id="9_rtwp1"]
+
+[node name="Newpaper" type="Panel" unique_id=55914918]
+
+[node name="BorderBackground" type="Sprite2D" parent="." unique_id=381820666]
+z_index = -1
+position = Vector2(580.00006, 326)
+scale = Vector2(0.5217593, 0.52175933)
+texture = ExtResource("1_2tkua")
+
+[node name="ScreenFilter" type="Sprite2D" parent="." unique_id=1692232819]
+modulate = Color(1, 1, 1, 0.49019608)
+z_index = 1
+position = Vector2(579.5, 326.5)
+scale = Vector2(0.5026042, 0.48796293)
+texture = ExtResource("2_d11wt")
+
+[node name="WhiteBar" type="Sprite2D" parent="." unique_id=1144744089]
+position = Vector2(577, 128)
+scale = Vector2(0.68, 0.015)
+texture = ExtResource("4_drvp6")
+
+[node name="Article1Image" type="Sprite2D" parent="." unique_id=879979215]
+position = Vector2(346, 248.00002)
+scale = Vector2(0.19154349, 0.19722225)
+texture = ExtResource("5_sjvpl")
+
+[node name="Article2Image" type="Sprite2D" parent="." unique_id=1087634306]
+position = Vector2(655, 248.00002)
+scale = Vector2(0.19722226, 0.19722225)
+texture = ExtResource("6_eqikd")
+
+[node name="Article3Image" type="Sprite2D" parent="." unique_id=1963105917]
+position = Vector2(950, 248)
+scale = Vector2(0.1972222, 0.1972222)
+texture = ExtResource("7_3sxtg")
+
+[node name="Article4Image" type="Sprite2D" parent="." unique_id=920773312]
+position = Vector2(345.98, 438.97)
+scale = Vector2(0.19174993, 0.19174993)
+texture = ExtResource("8_jex6q")
+
+[node name="Article5Image" type="Sprite2D" parent="." unique_id=1953550224]
+position = Vector2(656, 440)
+scale = Vector2(0.19583337, 0.19704224)
+texture = ExtResource("9_rtwp1")
+
+[node name="NewpaperTitle" type="Label" parent="." unique_id=2112792254]
+layout_mode = 1
+offset_left = 441.0
+offset_top = 89.0
+offset_right = 763.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 40
+text = "The Daily Shallot"
+
+[node name="Article1Text" type="Label" parent="." unique_id=2025251916]
+layout_mode = 1
+offset_left = 155.0
+offset_top = 177.0
+offset_right = 290.615
+offset_bottom = 377.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 15
+text = "Breaking News! Octrocop expands technological empire across all 13 states. What does this mean for the future of the Republic of Britain?"
+autowrap_mode = 2
+
+[node name="Article2Text" type="Label" parent="." unique_id=1570039725]
+layout_mode = 1
+offset_left = 464.0
+offset_top = 177.0
+offset_right = 599.615
+offset_bottom = 318.765
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 15
+text = "henry alva offcially announced as new CEO of Octrocorp!"
+autowrap_mode = 2
+
+[node name="Date" type="Label" parent="." unique_id=206555493]
+layout_mode = 1
+offset_left = 344.0
+offset_top = 107.0
+offset_right = 414.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 16
+text = "XX . 06 . 98"
+autowrap_mode = 2
+
+[node name="Article3Text" type="Label" parent="." unique_id=1301752421]
+layout_mode = 1
+offset_left = 759.0
+offset_top = 177.0
+offset_right = 894.615
+offset_bottom = 377.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 15
+text = "Octrocorp releases the Utral mkII. android guards for all your property security needs!"
+autowrap_mode = 2
+
+[node name="Article4Text" type="Label" parent="." unique_id=1607014688]
+layout_mode = 1
+offset_left = 155.0
+offset_top = 369.0
+offset_right = 291.7
+offset_bottom = 446.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 15
+text = "Octrocorp releases exciting new details about their upcoming AI model for the home office!"
+autowrap_mode = 2
+
+[node name="Article5Text" type="Label" parent="." unique_id=13257073]
+layout_mode = 1
+offset_left = 464.0
+offset_top = 369.0
+offset_right = 595.065
+offset_bottom = 526.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_d11wt")
+theme_override_font_sizes/font_size = 15
+text = "Ocrtocorp launches new marketing campaign for state of the art home security chain of products!"
+autowrap_mode = 2

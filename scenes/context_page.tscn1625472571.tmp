@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://j04w416igr6o"]
+
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="1_3htj5"]
+[ext_resource type="Script" uid="uid://cyh8kcwjrjdpa" path="res://scripts/context_page.gd" id="1_u56ps"]
+[ext_resource type="Texture2D" uid="uid://bk5hb0guuxy43" path="res://art/Octrocorp_logo.png" id="2_kc55j"]
+
+[node name="ContextPage" type="Node2D" unique_id=1214354585]
+script = ExtResource("1_u56ps")
+
+[node name="Panel" type="Panel" parent="." unique_id=1897559509]
+offset_right = 1154.0
+offset_bottom = 646.0
+
+[node name="Exposition" type="Label" parent="." unique_id=2051719232]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 280.0
+offset_top = 142.0
+offset_right = 880.0
+offset_bottom = 379.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_3htj5")
+text = "The year is 2099. The Octrocorp corporation, the biggest security company in the Republic of Britain, has almost a complete monopoly across the entire country as they release state of the art android security guards, motion sensors, cameras, and more. Their products are used by most households, organisations, companies, and even the government. A small minority of the public however, are concerned over how far their control over the nation has reached, the individual’s privacy is a growing concern.
+
+You work in Octrocorp’s marketing department, and are the one final cog that releases their promotional material. Or… you could attempt to bring the company to its knees. By releasing posters that promote the growing revolution amongst the people. The fate of the country (and potentially the world) is in your hands…
+"
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="." unique_id=1703646283]
+offset_left = 454.0
+offset_top = 418.0
+offset_right = 676.67
+offset_bottom = 435.25
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_3htj5")
+text = "(Press the space bar to continue)"
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=1254617482]
+position = Vector2(566, 506.99997)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_kc55j")

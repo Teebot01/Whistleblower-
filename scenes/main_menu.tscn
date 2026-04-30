@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://torp8y84uaf8"]
+
+[ext_resource type="Script" uid="uid://bx2ymi0rs1mct" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://dmnc33sdw37mb" path="res://art/full_artwork_pieces/main_menu.png" id="1_ekxnf"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="2_bqqt6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(0.6, 0.6, 0.6, 0.84313726)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.6, 0.6, 0.6, 0.84313726)
+
+[node name="MainMenu" type="Node2D" unique_id=1388809330]
+script = ExtResource("1_bqqt6")
+
+[node name="Art" type="Sprite2D" parent="." unique_id=1120430265]
+position = Vector2(577, 324)
+texture = ExtResource("1_ekxnf")
+
+[node name="Title" type="Label" parent="." unique_id=326305456]
+offset_left = 41.0
+offset_top = 112.0
+offset_right = 505.0
+offset_bottom = 195.0
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 70
+text = "Whistleblower?"
+
+[node name="StartButton" type="Button" parent="." unique_id=893784673]
+offset_left = 46.0
+offset_top = 191.0
+offset_right = 216.755
+offset_bottom = 233.39
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ekxnf")
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="." unique_id=370892510]
+offset_left = 46.0
+offset_top = 261.0
+offset_right = 216.755
+offset_bottom = 303.39
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+text = "Quit"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

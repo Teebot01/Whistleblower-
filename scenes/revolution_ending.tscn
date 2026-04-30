@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cgxngilg3d7yd"]
+
+[ext_resource type="Texture2D" uid="uid://cqut68lq88nim" path="res://art/full_artwork_pieces/rev_ending.png" id="1_7vh00"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="2_6ose7"]
+
+[node name="RevolutionEnding" type="Node2D" unique_id=393634012]
+
+[node name="Art" type="Sprite2D" parent="." unique_id=713634164]
+position = Vector2(577, 323)
+texture = ExtResource("1_7vh00")
+
+[node name="Text" type="Label" parent="." unique_id=608810796]
+offset_left = 21.0
+offset_top = 22.0
+offset_right = 423.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("2_6ose7")
+theme_override_font_sizes/font_size = 30
+text = "Ending 2: \"The Fall of Octrocorp\"
+(Press escape to quit)"
