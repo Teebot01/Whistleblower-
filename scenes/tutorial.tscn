@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://ji7jl5bq0l1k"]
+
+[ext_resource type="Texture2D" uid="uid://upe58ov8vgd1" path="res://art/tutorial.png" id="1_ph3nu"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="2_4kmhl"]
+[ext_resource type="Script" uid="uid://dkf3jelxy34c6" path="res://scripts/tutorial.gd" id="2_cq4me"]
+[ext_resource type="Texture2D" uid="uid://coeqar7xkcl8g" path="res://art/Console/white_bar.png" id="3_cq4me"]
+
+[node name="Tutorial" type="Sprite2D" unique_id=317163880]
+position = Vector2(578, 322)
+texture = ExtResource("1_ph3nu")
+script = ExtResource("2_cq4me")
+
+[node name="Bring Back Newspaper" type="Label" parent="." unique_id=352938319]
+offset_left = -455.0
+offset_top = -186.0
+offset_right = -213.0
+offset_bottom = -163.0
+theme_override_fonts/font = ExtResource("2_4kmhl")
+theme_override_font_sizes/font_size = 27
+text = "Open and close the news"
+
+[node name="Line" type="Sprite2D" parent="Bring Back Newspaper" unique_id=220901289]
+position = Vector2(-20.00003, 22.999985)
+rotation = 2.958333
+scale = Vector2(0.03519944, 0.012377448)
+texture = ExtResource("3_cq4me")
+
+[node name="Choose a poster thumbnail" type="Label" parent="." unique_id=644792000]
+offset_left = -242.0
+offset_top = 4.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("2_4kmhl")
+theme_override_font_sizes/font_size = 27
+text = "Choose a poster thumbnail"
+
+[node name="Line" type="Sprite2D" parent="Choose a poster thumbnail" unique_id=1269115270]
+position = Vector2(-10.000001, 33.999985)
+rotation = 2.4085543
+scale = Vector2(0.03519944, 0.012377448)
+texture = ExtResource("3_cq4me")
+
+[node name="Upload Selected Poster" type="Label" parent="." unique_id=829213821]
+offset_left = -4.0
+offset_top = 161.0
+offset_right = 290.0
+offset_bottom = 184.0
+theme_override_fonts/font = ExtResource("2_4kmhl")
+theme_override_font_sizes/font_size = 27
+text = "Upload Selected poster"
+
+[node name="Line" type="Sprite2D" parent="Upload Selected Poster" unique_id=461874271]
+position = Vector2(283.00003, 47.999985)
+rotation = 0.66497046
+scale = Vector2(0.10494554, 0.012377448)
+texture = ExtResource("3_cq4me")
+
+[node name="BackButton" type="Button" parent="." unique_id=2052806888]
+offset_left = -538.0
+offset_top = 231.0
+offset_right = -442.875
+offset_bottom = 283.0
+theme_override_fonts/font = ExtResource("2_4kmhl")
+theme_override_font_sizes/font_size = 40
+text = "back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

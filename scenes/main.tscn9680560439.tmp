@@ -1,0 +1,321 @@
+[gd_scene format=3 uid="uid://cdsddywpwnp1u"]
+
+[ext_resource type="PackedScene" uid="uid://b8hpfokeoh6bu" path="res://scenes/manager.tscn" id="1_gqmmt"]
+[ext_resource type="Texture2D" uid="uid://cweklsrlodve5" path="res://art/Console/upload_button.png" id="1_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://jl3051e6gi7x" path="res://art/thumbnails/corporate/corporate_thumbnail_1.png" id="1_tefeu"]
+[ext_resource type="Texture2D" uid="uid://8eeoaa16nkpa" path="res://art/thumbnails/corporate/corporate_thumbnail_2.png" id="2_choun"]
+[ext_resource type="Script" uid="uid://dhq5dm5ktw5ov" path="res://scripts/poster_preview.gd" id="2_sugp2"]
+[ext_resource type="Texture2D" uid="uid://b5vchwj3jgpvi" path="res://art/posters/blank.png" id="2_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://3xqqws3b4ju0" path="res://art/Console/border_background.png" id="3_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://dlrwynpgc0oom" path="res://art/thumbnails/corporate/corporate_thumbnail_3.png" id="3_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://dugs4s86kygbo" path="res://art/thumbnails/corporate/corporate_thumbnail_4.png" id="4_eb6dy"]
+[ext_resource type="Texture2D" uid="uid://dwue8gtwuebam" path="res://art/Console/screen_filter.png" id="4_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://qdfwek50we8x" path="res://art/thumbnails/corporate/corporate_thumbnail_5.png" id="5_trceg"]
+[ext_resource type="Texture2D" uid="uid://bhcp25qiw82al" path="res://art/thumbnails/revolution/revolution_thumbnail_1.png" id="6_jkv2x"]
+[ext_resource type="Texture2D" uid="uid://fa4sowna0qhx" path="res://art/thumbnails/revolution/revolution_thumbnail_2.png" id="7_jbj1t"]
+[ext_resource type="Texture2D" uid="uid://dmhmg10w6xbrs" path="res://art/thumbnails/revolution/revolution_thumbnail_3.png" id="8_muem4"]
+[ext_resource type="Texture2D" uid="uid://bcrirf0c1dp2l" path="res://art/thumbnails/revolution/revolution_thumbnail_4.png" id="9_dp3eg"]
+[ext_resource type="Texture2D" uid="uid://dlg4wxylepvql" path="res://art/thumbnails/revolution/revolution_thumbnail_5.png" id="10_0ld40"]
+[ext_resource type="FontFile" uid="uid://bp0asxpg784yl" path="res://fonts/AldotheApache.ttf" id="16_jbj1t"]
+[ext_resource type="Texture2D" uid="uid://cfm2vr4slq8rf" path="res://art/Console/news_button.png" id="17_muem4"]
+[ext_resource type="PackedScene" uid="uid://mqy4x085tdyn" path="res://scenes/newpaper.tscn" id="18_dp3eg"]
+[ext_resource type="Script" uid="uid://bp723enpll7he" path="res://scripts/newpaper.gd" id="19_0ld40"]
+
+[node name="main" type="Node2D" unique_id=758831196]
+
+[node name="Manager" parent="." unique_id=2131342433 instance=ExtResource("1_gqmmt")]
+
+[node name="Thumbnails" type="Node2D" parent="." unique_id=1689343967]
+position = Vector2(23, 0)
+
+[node name="CorporateThumbnails" type="Node2D" parent="Thumbnails" unique_id=1699009174]
+
+[node name="CorporateThumbnail1" type="Sprite2D" parent="Thumbnails/CorporateThumbnails" unique_id=1682372425]
+position = Vector2(66, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("1_tefeu")
+
+[node name="CorporateButton1" type="Button" parent="Thumbnails/CorporateThumbnails/CorporateThumbnail1" unique_id=1329607555]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="CorporateThumbnail2" type="Sprite2D" parent="Thumbnails/CorporateThumbnails" unique_id=1808439398]
+position = Vector2(162, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("2_choun")
+
+[node name="CorporateButton2" type="Button" parent="Thumbnails/CorporateThumbnails/CorporateThumbnail2" unique_id=1037424411]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="CorporateThumbnail3" type="Sprite2D" parent="Thumbnails/CorporateThumbnails" unique_id=1717256356]
+position = Vector2(261, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("3_ya4ey")
+
+[node name="CorporateButton3" type="Button" parent="Thumbnails/CorporateThumbnails/CorporateThumbnail3" unique_id=1057329865]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="CorporateThumbnail4" type="Sprite2D" parent="Thumbnails/CorporateThumbnails" unique_id=2051552052]
+position = Vector2(359.00003, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("4_eb6dy")
+
+[node name="CorporateButton4" type="Button" parent="Thumbnails/CorporateThumbnails/CorporateThumbnail4" unique_id=395938090]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="CorporateThumbnail5" type="Sprite2D" parent="Thumbnails/CorporateThumbnails" unique_id=532264131]
+position = Vector2(461.00003, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("5_trceg")
+
+[node name="CorporateButton5" type="Button" parent="Thumbnails/CorporateThumbnails/CorporateThumbnail5" unique_id=1944198633]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="RevolutionThumbnails" type="Node2D" parent="Thumbnails" unique_id=1792119584]
+position = Vector2(0, 126)
+
+[node name="RevolutionThumbnail1" type="Sprite2D" parent="Thumbnails/RevolutionThumbnails" unique_id=1772488272]
+position = Vector2(66, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("6_jkv2x")
+
+[node name="RevolutionButton1" type="Button" parent="Thumbnails/RevolutionThumbnails/RevolutionThumbnail1" unique_id=1060488795]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="RevolutionThumbnail2" type="Sprite2D" parent="Thumbnails/RevolutionThumbnails" unique_id=1691956954]
+position = Vector2(162, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("7_jbj1t")
+
+[node name="RevolutionButton2" type="Button" parent="Thumbnails/RevolutionThumbnails/RevolutionThumbnail2" unique_id=901306149]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="RevolutionThumbnail3" type="Sprite2D" parent="Thumbnails/RevolutionThumbnails" unique_id=878236836]
+position = Vector2(261, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("8_muem4")
+
+[node name="RevolutionButton3" type="Button" parent="Thumbnails/RevolutionThumbnails/RevolutionThumbnail3" unique_id=1695729506]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="RevolutionThumbnail4" type="Sprite2D" parent="Thumbnails/RevolutionThumbnails" unique_id=229061221]
+position = Vector2(359.00003, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("9_dp3eg")
+
+[node name="RevolutionButton4" type="Button" parent="Thumbnails/RevolutionThumbnails/RevolutionThumbnail4" unique_id=1737376526]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="RevolutionThumbnail5" type="Sprite2D" parent="Thumbnails/RevolutionThumbnails" unique_id=526969647]
+position = Vector2(461.00003, 407)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("10_0ld40")
+
+[node name="RevolutionButton5" type="Button" parent="Thumbnails/RevolutionThumbnails/RevolutionThumbnail5" unique_id=1890270040]
+offset_left = -121.56862
+offset_top = -121.56863
+offset_right = -82.56862
+offset_bottom = -90.56863
+scale = Vector2(6.2, 7.79)
+flat = true
+
+[node name="SubmitButton" type="Button" parent="." unique_id=1766514051]
+modulate = Color(1.224127, 1.224127, 1.224127, 1)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 852.0
+offset_top = 474.6
+offset_right = 1340.0
+offset_bottom = 962.6
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.255, 0.239)
+icon = ExtResource("1_tbgi4")
+flat = true
+
+[node name="PosterPreview" type="Sprite2D" parent="." unique_id=63380313]
+modulate = Color(0.5764706, 0.73333335, 0.7176471, 1)
+position = Vector2(919, 273.6)
+scale = Vector2(0.598, 0.535)
+texture = ExtResource("2_tbgi4")
+script = ExtResource("2_sugp2")
+
+[node name="PosterPreviewConsole" type="Node2D" parent="." unique_id=2100216285]
+position = Vector2(479, 532.6001)
+scale = Vector2(0.255, 0.255)
+
+[node name="PosterPreviewBorder" type="Sprite2D" parent="PosterPreviewConsole" unique_id=2133074046]
+z_index = -1
+position = Vector2(1721.5677, -823.3164)
+scale = Vector2(0.82352936, 2.0980394)
+texture = ExtResource("3_jyhfs")
+
+[node name="PosterPreviewFilter" type="Sprite2D" parent="PosterPreviewConsole" unique_id=82356219]
+modulate = Color(1, 1, 1, 0.4)
+position = Vector2(1721.0392, -824.23535)
+rotation = 3.1415927
+scale = Vector2(0.765, -1.99)
+texture = ExtResource("4_tbgi4")
+
+[node name="FileExplorerConsole" type="Node2D" parent="." unique_id=1646859307]
+position = Vector2(484.00003, 533)
+scale = Vector2(0.255, 0.255)
+
+[node name="FileExplorerBorder" type="Sprite2D" parent="FileExplorerConsole" unique_id=730605354]
+z_index = -1
+position = Vector2(-721.5687, -380.39218)
+scale = Vector2(1.094, 1.273)
+texture = ExtResource("3_jyhfs")
+
+[node name="FileExplorerFilter" type="Sprite2D" parent="FileExplorerConsole" unique_id=1068898098]
+modulate = Color(1, 1, 1, 0.4862745)
+z_index = 1
+position = Vector2(-721.5687, -380.39206)
+rotation = 3.1415927
+scale = Vector2(1.025, -1.155)
+texture = ExtResource("4_tbgi4")
+
+[node name="FileExplorer" type="Label" parent="FileExplorerConsole" unique_id=1796376677]
+offset_left = -1670.5884
+offset_top = -937.255
+offset_right = -1516.5884
+offset_bottom = -914.255
+scale = Vector2(5.57, 5.57)
+theme_override_fonts/font = ExtResource("16_jbj1t")
+text = "File Explorer"
+
+[node name="CorporationFiles" type="Label" parent="FileExplorerConsole" unique_id=1563946973]
+offset_left = -1670.5884
+offset_top = -752.94104
+offset_right = -1516.5884
+offset_bottom = -729.94104
+scale = Vector2(5.57, 5.57)
+theme_override_fonts/font = ExtResource("16_jbj1t")
+text = "Octrocorp Files"
+
+[node name="RevolutionFiles" type="Label" parent="FileExplorerConsole" unique_id=121664182]
+offset_left = -1670.5881
+offset_top = -250.98026
+offset_right = -1516.5881
+offset_bottom = -227.98026
+scale = Vector2(5.57, 5.57)
+theme_override_fonts/font = ExtResource("16_jbj1t")
+text = "Revolution Files"
+
+[node name="InfoConsole" type="Node2D" parent="." unique_id=1439141465]
+position = Vector2(484, 158.00006)
+scale = Vector2(0.255, 0.255)
+
+[node name="InfoBorder" type="Sprite2D" parent="InfoConsole" unique_id=925027973]
+z_index = -1
+position = Vector2(-1235.2942, -164.70616)
+scale = Vector2(0.559, 0.598)
+texture = ExtResource("3_jyhfs")
+
+[node name="InfoFilter" type="Sprite2D" parent="InfoConsole" unique_id=2096239784]
+modulate = Color(1, 1, 1, 0.4862745)
+z_index = 1
+position = Vector2(-1239.2157, -164.70612)
+rotation = 3.1415927
+scale = Vector2(0.5, -0.49)
+texture = ExtResource("4_tbgi4")
+
+[node name="Date" type="Label" parent="InfoConsole" unique_id=264360835]
+offset_left = -1666.6666
+offset_top = -364.70612
+offset_right = -1584.6666
+offset_bottom = -341.70612
+scale = Vector2(5.57, 5.57)
+theme_override_fonts/font = ExtResource("16_jbj1t")
+text = "XX . 06 . 98"
+
+[node name="FilesSubmitted" type="Label" parent="InfoConsole" unique_id=948333916]
+offset_left = -1666.6665
+offset_top = -223.52959
+offset_right = -1512.6665
+offset_bottom = -200.52959
+scale = Vector2(5.57, 5.57)
+theme_override_fonts/font = ExtResource("16_jbj1t")
+text = "Files Submitted (0/3)"
+
+[node name="NewsIcon" type="Sprite2D" parent="." unique_id=250006977]
+position = Vector2(63.99994, 158)
+scale = Vector2(0.14917499, 0.14917499)
+texture = ExtResource("17_muem4")
+
+[node name="NewsButton" type="Button" parent="NewsIcon" unique_id=269799319]
+offset_left = -117.647064
+offset_top = -117.64731
+offset_right = -78.647064
+offset_bottom = -86.64731
+scale = Vector2(6.12, 7.735)
+flat = true
+
+[node name="Newpaper" parent="NewsIcon" unique_id=55914918 instance=ExtResource("18_dp3eg")]
+z_index = 2
+offset_left = -429.02597
+offset_top = -1059.1588
+offset_right = -429.02597
+offset_bottom = -1059.1588
+scale = Vector2(6.630964, 6.6309724)
+script = ExtResource("19_0ld40")
+
+[connection signal="pressed" from="Thumbnails/CorporateThumbnails/CorporateThumbnail1/CorporateButton1" to="PosterPreview" method="_on_corporate_button_1_pressed"]
+[connection signal="pressed" from="Thumbnails/CorporateThumbnails/CorporateThumbnail2/CorporateButton2" to="PosterPreview" method="_on_corporate_button_2_pressed"]
+[connection signal="pressed" from="Thumbnails/CorporateThumbnails/CorporateThumbnail3/CorporateButton3" to="PosterPreview" method="_on_corporate_button_3_pressed"]
+[connection signal="pressed" from="Thumbnails/CorporateThumbnails/CorporateThumbnail4/CorporateButton4" to="PosterPreview" method="_on_corporate_button_4_pressed"]
+[connection signal="pressed" from="Thumbnails/CorporateThumbnails/CorporateThumbnail5/CorporateButton5" to="PosterPreview" method="_on_corporate_button_5_pressed"]
+[connection signal="pressed" from="Thumbnails/RevolutionThumbnails/RevolutionThumbnail1/RevolutionButton1" to="PosterPreview" method="_on_revolution_button_1_pressed"]
+[connection signal="pressed" from="Thumbnails/RevolutionThumbnails/RevolutionThumbnail2/RevolutionButton2" to="PosterPreview" method="_on_revolution_button_2_pressed"]
+[connection signal="pressed" from="Thumbnails/RevolutionThumbnails/RevolutionThumbnail3/RevolutionButton3" to="PosterPreview" method="_on_revolution_button_3_pressed"]
+[connection signal="pressed" from="Thumbnails/RevolutionThumbnails/RevolutionThumbnail4/RevolutionButton4" to="PosterPreview" method="_on_revolution_button_4_pressed"]
+[connection signal="pressed" from="Thumbnails/RevolutionThumbnails/RevolutionThumbnail5/RevolutionButton5" to="PosterPreview" method="_on_revolution_button_5_pressed"]
+[connection signal="pressed" from="SubmitButton" to="PosterPreview" method="_on_submit_button_pressed"]
+[connection signal="pressed" from="NewsIcon/NewsButton" to="NewsIcon/Newpaper" method="_on_news_button_pressed"]

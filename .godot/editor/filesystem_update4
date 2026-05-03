@@ -1,0 +1,4 @@
+res://scenes/tutorial.tscn
+res://scripts/revolution_ending.gd
+res://scripts/corporation_ending.gd
+res://scenes/revolution_ending.tscn
